@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
+body {
+  background-color: #013a6b;
+  background-image: -webkit-linear-gradient(47deg, #ff0000 50%, #004e95 50%);
+  min-height: 800px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.battle-button-home {
+  margin-bottom: 15%;
+  margin-left: 26%;
+}
+.create-new {
+  margin-bottom: 15%;
+  margin-left: 20%;
+  height: 150%;
+}
+.fighter-logo {
+  margin-top: 3%;
+  margin-left: 30.5%;
+  z-index: 1;
+}
+.highlight-white {
+  background-color: #ffff;
+  margin-top: 22.75%;
+  margin-left: 30.5%;
+  z-index: -1;
+  height: 40px;
+  width: 500px;
+  position: absolute;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.highlight-white-2 {
+  background-color: #ffffff;
+  margin-top: 7%;
+  margin-left: 30.5%;
+  z-index: -1;
+  height: 50px;
+  width: 500px;
+  position: absolute;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.lower-links {
+  z-index: 1;
 }
-
-.App-link {
-  color: #61dafb;
+.lower-links:hover {
+  color: red;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fighterLogo {
+  animation-duration: 3s;
+  animation-delay: 2s;
 }
