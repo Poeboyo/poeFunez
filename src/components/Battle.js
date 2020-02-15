@@ -1,4 +1,5 @@
 import React from "react";
+import "../BattleStyle.css";
 
 function Battle() {
   return (

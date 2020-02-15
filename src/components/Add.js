@@ -1,5 +1,5 @@
 import React from "react";
-
+import "../AddStyle.css";
 function Add() {
   return (
     <div>
