@@ -1,15 +1,15 @@
 import React from "react";
 import "./style.css";
-import { Button, TextInput, Row, Col, Select } from "react-materialize";
+import { Button, TextInput, Row, Col, Select, Icon } from "react-materialize";
 
-function CharacterCreate() {
+function Create() {
   return (
     <div className="charForm">
-      <Row className="align-center">
+      <Row className="center-align">
         <TextInput placeholder="Character Name" s={8} />
       </Row>
 
-      <Row className="align-center">
+      <Row className="center-align">
         <Col className=" white-text white" s={8}>
           <Select
             onChange={function noRefCheck() {}}
@@ -217,8 +217,20 @@ function CharacterCreate() {
           </Select>
         </Col>
       </Row>
+      <Row>
+        <Button
+          node="button"
+          type="submit"
+          waves="light"
+          center={true}
+          className="center-align"
+        >
+          Submit
+          <Icon right>send</Icon>
+        </Button>
+      </Row>
     </div>
   );
 }
 
-export default CharacterCreate;
+export default Create;
