@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
-import CharacterCreate from "../../components/CharacterCreate";
+import Create from "../../components/Create";
 
 function Add() {
   return (
@@ -12,7 +12,7 @@ function Add() {
           <i class="material-icons right">arrow_forward</i>
         </a>
       </Link>
-      <CharacterCreate />
+      <Create />
 
       {/* <!-- Fighter Form Creation --> */}
     </div>
