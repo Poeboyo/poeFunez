@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import Logo from "../../components/Logo";
 
 function Home() {
-  console.log("I will survive");
   return (
     <div>
       <Logo></Logo>
@@ -19,13 +18,6 @@ function Home() {
           BATTLE!
         </a>
       </Link>
-      <a href="https://github.com/Poeboyo/poeFunez" class="lower-links">
-        GitHub Repository
-      </a>{" "}
-      ||
-      <a href="/api/fighters" class="lower-links">
-        Fighters API
-      </a>
     </div>
   );
 }
