@@ -1,1 +1,12 @@
-{"version":3,"sources":["App.css"],"names":[],"mappings":"AAAA,KACE,wBAAyB,CACzB,iEAA0E,CAC1E,gBACF,CAEA,oBACE,iBAAkB,CAClB,eACF,CACA,YACE,iBAAkB,CAClB,eAAgB,CAChB,WACF,CACA,cACE,aAAc,CACd,iBAAkB,CAClB,SACF,CACA,iBAEE,iBAAkB,CAGlB,WAGF,CAEA,oCATE,qBAAuB,CAEvB,iBAAkB,CAClB,UAAW,CAEX,WAAY,CACZ,iBAWF,CARA,mBAEE,aAAc,CAGd,WAGF,CACA,aACE,SACF,CACA,mBACE,SACF,CACA,aACE,6BAAsB,CAAtB,qBAAsB,CACtB,0BAAmB,CAAnB,kBACF","file":"main.42994271.chunk.css","sourcesContent":["body {\n  background-color: #013a6b;\n  background-image: -webkit-linear-gradient(47deg, #ff0000 50%, #004e95 50%);\n  min-height: 800px;\n}\n\n.battle-button-home {\n  margin-bottom: 15%;\n  margin-left: 26%;\n}\n.create-new {\n  margin-bottom: 15%;\n  margin-left: 20%;\n  height: 150%;\n}\n.fighter-logo {\n  margin-top: 3%;\n  margin-left: 30.5%;\n  z-index: 1;\n}\n.highlight-white {\n  background-color: #ffff;\n  margin-top: 22.75%;\n  margin-left: 30.5%;\n  z-index: -1;\n  height: 40px;\n  width: 500px;\n  position: absolute;\n}\n\n.highlight-white-2 {\n  background-color: #ffffff;\n  margin-top: 7%;\n  margin-left: 30.5%;\n  z-index: -1;\n  height: 50px;\n  width: 500px;\n  position: absolute;\n}\n.lower-links {\n  z-index: 1;\n}\n.lower-links:hover {\n  color: red;\n}\n.fighterLogo {\n  animation-duration: 3s;\n  animation-delay: 2s;\n}\n"]}
+{
+  "version": 3,
+  "sources": [
+    "App.css"
+  ],
+  "names": [],
+  "mappings": "AAAA,KACE,wBAAyB,CACzB,iEAA0E,CAC1E,gBACF,CAEA,oBACE,iBAAkB,CAClB,eACF,CACA,YACE,iBAAkB,CAClB,eAAgB,CAChB,WACF,CACA,cACE,aAAc,CACd,iBAAkB,CAClB,SACF,CACA,iBAEE,iBAAkB,CAGlB,WAGF,CAEA,oCATE,qBAAuB,CAEvB,iBAAkB,CAClB,UAAW,CAEX,WAAY,CACZ,iBAWF,CARA,mBAEE,aAAc,CAGd,WAGF,CACA,aACE,SACF,CACA,mBACE,SACF,CACA,aACE,6BAAsB,CAAtB,qBAAsB,CACtB,0BAAmB,CAAnB,kBACF",
+  "file": "main.42994271.chunk.css",
+  "sourcesContent": [
+    "body {\n  background-color: #013a6b;\n  background-image: -webkit-linear-gradient(47deg, #ff0000 50%, #004e95 50%);\n  min-height: 800px;\n}\n\n.battle-button-home {\n  margin-bottom: 15%;\n  margin-left: 26%;\n}\n.create-new {\n  margin-bottom: 15%;\n  margin-left: 20%;\n  height: 150%;\n}\n.fighter-logo {\n  margin-top: 3%;\n  margin-left: 30.5%;\n  z-index: 1;\n}\n.highlight-white {\n  background-color: #ffff;\n  margin-top: 22.75%;\n  margin-left: 30.5%;\n  z-index: -1;\n  height: 40px;\n  width: 500px;\n  position: absolute;\n}\n\n.highlight-white-2 {\n  background-color: #ffffff;\n  margin-top: 7%;\n  margin-left: 30.5%;\n  z-index: -1;\n  height: 50px;\n  width: 500px;\n  position: absolute;\n}\n.lower-links {\n  z-index: 1;\n}\n.lower-links:hover {\n  color: red;\n}\n.fighterLogo {\n  animation-duration: 3s;\n  animation-delay: 2s;\n}\n"
+  ]
+}
