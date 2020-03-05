@@ -5,8 +5,12 @@ import { Button, TextInput, Row, Col, Select, Icon } from "react-materialize";
 function Create() {
   return (
     <div>
-      <img src="./images/brain.gif" id="brain"></img>
-      <img src="./images/characterCreate.png" id="create-your-character"></img>
+      <img src="./images/brain.gif" id="brain" alt="brain"></img>
+      <img
+        src="./images/characterCreate.png"
+        id="create-your-character"
+        alt="character create"
+      ></img>
       <div className="charForm">
         <Row className="center-align" id="characterName">
           <TextInput placeholder="Character Name" s={8} />
