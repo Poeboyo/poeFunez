@@ -7,7 +7,7 @@ import PlayerTwo from "../../components/PlayerTwo";
 
 function Battle() {
   return (
-    <div>
+    <div id="characterSelectStage">
       {/* Go Back to Home Page */}
 
       <Link to="/">
