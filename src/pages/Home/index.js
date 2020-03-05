@@ -1,17 +1,13 @@
 import React from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
+import Logo from "../../components/Logo";
 
 function Home() {
+  console.log("I will survive");
   return (
     <div>
-      <div class="highlight-white"></div>
-      <div class="highlight-white-2"></div>
-      <img
-        src="./images/fflogo.png"
-        class="fighter-logo fadeInDown"
-        alt="logo"
-      />{" "}
+      <Logo></Logo>
       <Link to="/add">
         <a class="waves-effect waves-light btn-large create-new light-blue darken-4">
           <i class="material-icons right">add face</i>Add A Character{" "}
@@ -23,7 +19,7 @@ function Home() {
           BATTLE!
         </a>
       </Link>
-      <a href="https://github.com/Poeboyo/fighting-game" class="lower-links">
+      <a href="https://github.com/Poeboyo/poeFunez" class="lower-links">
         GitHub Repository
       </a>{" "}
       ||

@@ -1,6 +1,8 @@
 import React from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
+import PlayerOne from "../../components/PlayerOne";
+import PlayerTwo from "../../components/PlayerTwo";
 
 function Battle() {
   return (
@@ -11,7 +13,10 @@ function Battle() {
           <i class="material-icons right">arrow_back</i>
         </a>
       </Link>
-      {/* Charecter Selection */}
+
+      {/* Character Selection */}
+      <PlayerOne />
+      <PlayerTwo />
     </div>
   );
 }

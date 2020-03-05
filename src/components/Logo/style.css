@@ -1,0 +1,9 @@
+#lightningOne {
+  width: 100%;
+  height: 0;
+  padding-bottom: 86%;
+  position: relative;
+}
+#gifLightning {
+  position: absolute;
+}
