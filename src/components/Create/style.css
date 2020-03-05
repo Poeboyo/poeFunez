@@ -1,5 +1,31 @@
 .charForm {
   text-align: center;
-  margin-left: 18.5%;
-  margin-top: 12%;
+  margin-top: 10%;
+}
+.submit {
+  text-align: center;
+  margin-left: -1%;
+}
+.center-align {
+  margin-left: 20%;
+}
+
+.selections {
+  margin-left: 23%;
+}
+#characterName {
+  margin-left: 25%;
+  width: 75%;
+}
+
+#brain {
+  z-index: 0;
+  margin-left: 25%;
+  width: 25%;
+}
+
+#create-your-character {
+  z-index: -2;
+  margin-top: 5%;
+  margin-left: -18%;
 }
