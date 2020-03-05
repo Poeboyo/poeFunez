@@ -8,13 +8,19 @@ function Home() {
     <div>
       <Logo></Logo>
       <Link to="/add">
-        <a class="waves-effect waves-light btn-large create-new light-blue darken-4">
-          <i class="material-icons right">add face</i>Add A Character{" "}
+        <a
+          className="waves-effect waves-light btn-large create-new light-blue darken-4"
+          href
+        >
+          <i className="material-icons right">add face</i>Add A Character{" "}
         </a>
       </Link>
       <Link to="/battle">
-        <a class="waves-effect waves-light btn-large battle-button-home red">
-          <i class="material-icons right">directions_run flash_on</i>VERSUS
+        <a
+          className="waves-effect waves-light btn-large battle-button-home red"
+          href
+        >
+          <i className="material-icons right">directions_run flash_on</i>VERSUS
           BATTLE!
         </a>
       </Link>
