@@ -15,8 +15,6 @@ function Battle() {
           <i class="material-icons right">arrow_back</i>
         </a>
       </Link>
-      <div id="halfCircle"></div>
-      <div id="halfCircleBottom"></div>
 
       {/*  Character Selection */}
       <Row id="characterSelectScreen">
@@ -25,12 +23,7 @@ function Battle() {
             <PlayerOne />
           </div>
         </Col>
-        <Col s={2}>
-          {" "}
-          <img src="./images/characterSeparator.gif" id="separatorOne"></img>
-          <img src="./images/characterSeparator.gif" id="separatorTwo"></img>
-          <img src="./images/characterSeparator.gif" id="separatorThree"></img>
-        </Col>
+        <Col s={2}></Col>
         <Col s={5}>
           <div id="characterSelectionTwo">
             <PlayerTwo />
