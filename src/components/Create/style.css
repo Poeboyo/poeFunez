@@ -4,28 +4,39 @@
 }
 .submit {
   text-align: center;
-  margin-left: -1%;
+  margin-left: -5%;
+  margin-top: 29%;
+
+  position: absolute;
 }
 .center-align {
   margin-left: 20%;
+  margin-top: 19%;
+  position: absolute;
 }
 
 .selections {
   margin-left: 23%;
+  position: absolute;
 }
 #characterName {
+  position: absolute;
   margin-left: 25%;
-  width: 75%;
-}
+  margin-top: 12%;
 
-#brain {
-  z-index: 0;
-  margin-left: 25%;
-  width: 25%;
+  width: 75%;
 }
 
 #create-your-character {
   z-index: -2;
-  margin-top: 5%;
-  margin-left: -18%;
+  margin-top: -10%;
+  margin-left: 32%;
+  position: absolute;
+}
+#brain {
+  z-index: 2;
+  margin-left: 35%;
+  position: absolute;
+  margin-top: -10%;
+  width: 27%;
 }
