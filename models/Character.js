@@ -1,7 +1,7 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
-var Schema = mongoose.Schema;
-var newSchema = new Schema({
+const newFighter = new Schema({
   name: String,
   image: String,
   stats:{
@@ -10,10 +10,8 @@ var newSchema = new Schema({
     defense: Number,
     evasion: Number,
     speed: Number,
-
-    }
+  },
+  created: { type: Date, required: true, default: Date.now() },
 });
 
-var newChar = mongoose.model("newChar", newSchema);
-
-module.exports = newChar;
+module.exports = mongoose.model('createnew', newFighter);

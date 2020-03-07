@@ -13,12 +13,13 @@ function Create() {
       ></img>
       <div className="charForm">
         <Row className="center-align" id="characterName">
-          <TextInput placeholder="Character Name" s={8} />
+          <TextInput placeholder="Character Name" s={8} class="CharName"/>
         </Row>
 
         <Row className="center-align selections">
           <Col className=" white-text white" s={4.5}>
             <Select
+              class="attack"
               onChange={function noRefCheck() {}}
               options={{
                 classes: "",
@@ -70,6 +71,7 @@ function Create() {
               <option value="25">25</option>
             </Select>
             <Select
+            class="defense"
               onChange={function noRefCheck() {}}
               options={{
                 classes: "",
@@ -121,6 +123,7 @@ function Create() {
               <option value="25">25</option>
             </Select>
             <Select
+            class="speed"
               onChange={function noRefCheck() {}}
               options={{
                 classes: "",
@@ -172,6 +175,7 @@ function Create() {
               <option value="25">25</option>
             </Select>
             <Select
+            class="evasion"
               onChange={function noRefCheck() {}}
               options={{
                 classes: "",
