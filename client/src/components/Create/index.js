@@ -32,7 +32,37 @@ const options = [
   { value: 25, label: "25" }
 ];
 
+// const Selection = props => {
+//   console.log(props);
+//   return (
+//     <Select
+//       id={props.id}
+//       placeholder={props.placeholder}
+//       options={options}
+//       value={props.value}
+//     ></Select>
+//   );
+// };
+
 class Create extends React.Component {
+  state = {
+    selectedOption: {
+      name: String,
+      image: String,
+      stats: {
+        health: Number,
+        attack: Number,
+        defense: Number,
+        evasion: Number,
+        speed: Number
+      }
+    }
+  };
+
+  handleChange = selectedOption => {
+    this.setState({ selectedOption });
+    console.log(`Option selected:`, selectedOption);
+  };
   render() {
     return (
       <div>
@@ -42,14 +72,13 @@ class Create extends React.Component {
           id="create-your-character"
           alt="character create"
         ></img>
-        <div className="charForm">
+        <form className="charForm">
           <Row className="center-align " id="characterName">
             <TextInput
               placeholder="Character Name"
               className="white"
               s={8}
               id="characterNameInput"
-              value=""
             />
           </Row>
 
@@ -58,23 +87,42 @@ class Create extends React.Component {
               id="characterImageInput"
               placeholder="Character Image URL"
               className="white"
-              value=""
               s={8}
             />
           </Row>
 
           <Row className=" selections">
-            <Col className=" black-text white" s={2}>
-              <Select id="attack" options={options} placeholder="Attack" />
+            <Col className=" black-text white" s={2} id="attack">
+              <Select
+                placeholder="Attack"
+                onChange={this.handleChange}
+                options={options}
+                value={this.state.selectedOption.stats.attack}
+              />
             </Col>{" "}
-            <Col className=" black-text white" s={2}>
-              <Select id="defense" options={options} placeholder="Defense" />
+            <Col className=" black-text white" s={2} id="defense">
+              <Select
+                options={options}
+                placeholder="Defense"
+                onChange={this.handleChange}
+                value={this.state.selectedOption.stats.defense}
+              />
             </Col>{" "}
-            <Col className=" black-text white" s={2}>
-              <Select id="speed" options={options} placeholder="Speed" />
+            <Col className=" black-text white" s={2} id="speed">
+              <Select
+                options={options}
+                placeholder="Speed"
+                onChange={this.handleChange}
+                value={this.state.selectedOption.stats.speed}
+              />
             </Col>{" "}
-            <Col className=" black-text white" s={2}>
-              <Select id="evasion" options={options} placeholder="Evasion" />
+            <Col className=" black-text white" s={2} id="evasion">
+              <Select
+                options={options}
+                placeholder="Evasion"
+                onChange={this.handleChange}
+                value={this.state.selectedOption.stats.evasion}
+              />
             </Col>
           </Row>
           <Row>
@@ -88,7 +136,7 @@ class Create extends React.Component {
               <Icon right>send</Icon>
             </Button>
           </Row>
-        </div>
+        </form>
       </div>
     );
   }
