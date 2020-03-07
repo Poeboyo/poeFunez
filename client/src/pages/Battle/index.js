@@ -10,13 +10,11 @@ function Battle() {
     <div id="characterSelectStage">
       {/* Go Back to Home Page */}
 
-      <Link to="/">
-        <a
-          className="btn-floating btn-large waves-effect waves-light red back-button"
-          href
-        >
-          <i className="material-icons right">arrow_back</i>
-        </a>
+      <Link
+        to="/"
+        className="btn-floating btn-large waves-effect waves-light red back-button"
+      >
+        <i className="material-icons right">arrow_back</i>
       </Link>
 
       {/*  Character Selection */}

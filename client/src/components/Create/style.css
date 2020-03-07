@@ -17,13 +17,22 @@
 
 .selections {
   margin-left: 23%;
+  margin-top: 22%;
   position: absolute;
+  width: 80%;
+  overflow: initial;
 }
 #characterName {
   position: absolute;
   margin-left: 25%;
   margin-top: 12%;
+  width: 75%;
+}
 
+#characterImage {
+  position: absolute;
+  margin-left: 25%;
+  margin-top: 16%;
   width: 75%;
 }
 
@@ -34,7 +43,7 @@
   position: absolute;
 }
 #brain {
-  z-index: 2;
+  z-index: -3;
   margin-left: 35%;
   position: absolute;
   margin-top: -10%;

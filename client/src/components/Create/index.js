@@ -1,248 +1,97 @@
 import React from "react";
+import Select from "react-select";
+
 import "./style.css";
-import { Button, TextInput, Row, Col, Select, Icon } from "react-materialize";
+import { Button, TextInput, Row, Col, Icon } from "react-materialize";
 
-function Create() {
-  return (
-    <div>
-      <img src="./images/brain.gif" id="brain" alt="brain"></img>
-      <img
-        src="./images/characterCreate.png"
-        id="create-your-character"
-        alt="character create"
-      ></img>
-      <div className="charForm">
-        <Row className="center-align" id="characterName">
-          <TextInput placeholder="Character Name" s={8} class="CharName"/>
-        </Row>
+const options = [
+  { value: 1, label: "1" },
+  { value: 2, label: "2" },
+  { value: 3, label: "3" },
+  { value: 4, label: "4" },
+  { value: 5, label: "5" },
+  { value: 6, label: "6" },
+  { value: 7, label: "7" },
+  { value: 8, label: "8" },
+  { value: 9, label: "9" },
+  { value: 10, label: "10" },
+  { value: 11, label: "11" },
+  { value: 12, label: "12" },
+  { value: 13, label: "13" },
+  { value: 14, label: "14" },
+  { value: 15, label: "15" },
+  { value: 16, label: "16" },
+  { value: 17, label: "17" },
+  { value: 18, label: "18" },
+  { value: 19, label: "19" },
+  { value: 20, label: "20" },
+  { value: 21, label: "21" },
+  { value: 22, label: "22" },
+  { value: 23, label: "23" },
+  { value: 24, label: "24" },
+  { value: 25, label: "25" }
+];
 
-        <Row className="center-align selections">
-          <Col className=" white-text white" s={4.5}>
-            <Select
-              class="attack"
-              onChange={function noRefCheck() {}}
-              options={{
-                classes: "",
-                dropdownOptions: {
-                  alignment: "center",
-                  autoTrigger: true,
-                  closeOnClick: true,
-                  constrainWidth: true,
-                  container: null,
-                  coverTrigger: true,
-                  hover: false,
-                  inDuration: 150,
-                  onCloseEnd: null,
-                  onCloseStart: null,
-                  onOpenEnd: null,
-                  onOpenStart: null,
-                  outDuration: 250
-                }
-              }}
+class Create extends React.Component {
+  render() {
+    return (
+      <div>
+        <img src="./images/brain.gif" id="brain" alt="brain"></img>
+        <img
+          src="./images/characterCreate.png"
+          id="create-your-character"
+          alt="character create"
+        ></img>
+        <div className="charForm">
+          <Row className="center-align " id="characterName">
+            <TextInput
+              placeholder="Character Name"
+              className="white"
+              s={8}
+              id="characterNameInput"
               value=""
-            >
-              <option disabled value="">
-                Choose your Attack
-              </option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-              <option value="9">9</option>
-              <option value="10">10</option>
-              <option value="11">11</option>
-              <option value="12">12</option>
-              <option value="13">13</option>
-              <option value="14">14</option>
-              <option value="15">15</option>
-              <option value="16">16</option>
-              <option value="17">17</option>
-              <option value="18">18</option>
-              <option value="19">19</option>
-              <option value="20">20</option>
-              <option value="21">21</option>
-              <option value="22">22</option>
-              <option value="23">23</option>
-              <option value="24">24</option>
-              <option value="25">25</option>
-            </Select>
-            <Select
-            class="defense"
-              onChange={function noRefCheck() {}}
-              options={{
-                classes: "",
-                dropdownOptions: {
-                  alignment: "center",
-                  autoTrigger: true,
-                  closeOnClick: true,
-                  constrainWidth: true,
-                  container: null,
-                  coverTrigger: true,
-                  hover: false,
-                  inDuration: 150,
-                  onCloseEnd: null,
-                  onCloseStart: null,
-                  onOpenEnd: null,
-                  onOpenStart: null,
-                  outDuration: 250
-                }
-              }}
+            />
+          </Row>
+
+          <Row className="center-align text-white" id="characterImage">
+            <TextInput
+              id="characterImageInput"
+              placeholder="Character Image URL"
+              className="white"
               value=""
+              s={8}
+            />
+          </Row>
+
+          <Row className=" selections">
+            <Col className=" black-text white" s={2}>
+              <Select id="attack" options={options} placeholder="Attack" />
+            </Col>{" "}
+            <Col className=" black-text white" s={2}>
+              <Select id="defense" options={options} placeholder="Defense" />
+            </Col>{" "}
+            <Col className=" black-text white" s={2}>
+              <Select id="speed" options={options} placeholder="Speed" />
+            </Col>{" "}
+            <Col className=" black-text white" s={2}>
+              <Select id="evasion" options={options} placeholder="Evasion" />
+            </Col>
+          </Row>
+          <Row>
+            <Button
+              node="button"
+              type="submit"
+              waves="light"
+              className="blue submit"
             >
-              <option disabled value="">
-                Choose your Defense
-              </option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-              <option value="9">9</option>
-              <option value="10">10</option>
-              <option value="11">11</option>
-              <option value="12">12</option>
-              <option value="13">13</option>
-              <option value="14">14</option>
-              <option value="15">15</option>
-              <option value="16">16</option>
-              <option value="17">17</option>
-              <option value="18">18</option>
-              <option value="19">19</option>
-              <option value="20">20</option>
-              <option value="21">21</option>
-              <option value="22">22</option>
-              <option value="23">23</option>
-              <option value="24">24</option>
-              <option value="25">25</option>
-            </Select>
-            <Select
-            class="speed"
-              onChange={function noRefCheck() {}}
-              options={{
-                classes: "",
-                dropdownOptions: {
-                  alignment: "center",
-                  autoTrigger: true,
-                  closeOnClick: true,
-                  constrainWidth: true,
-                  container: null,
-                  coverTrigger: true,
-                  hover: false,
-                  inDuration: 150,
-                  onCloseEnd: null,
-                  onCloseStart: null,
-                  onOpenEnd: null,
-                  onOpenStart: null,
-                  outDuration: 250
-                }
-              }}
-              value=""
-            >
-              <option disabled value="">
-                Choose your Speed
-              </option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-              <option value="9">9</option>
-              <option value="10">10</option>
-              <option value="11">11</option>
-              <option value="12">12</option>
-              <option value="13">13</option>
-              <option value="14">14</option>
-              <option value="15">15</option>
-              <option value="16">16</option>
-              <option value="17">17</option>
-              <option value="18">18</option>
-              <option value="19">19</option>
-              <option value="20">20</option>
-              <option value="21">21</option>
-              <option value="22">22</option>
-              <option value="23">23</option>
-              <option value="24">24</option>
-              <option value="25">25</option>
-            </Select>
-            <Select
-            class="evasion"
-              onChange={function noRefCheck() {}}
-              options={{
-                classes: "",
-                dropdownOptions: {
-                  alignment: "center",
-                  autoTrigger: true,
-                  closeOnClick: true,
-                  constrainWidth: true,
-                  container: null,
-                  coverTrigger: true,
-                  hover: false,
-                  inDuration: 150,
-                  onCloseEnd: null,
-                  onCloseStart: null,
-                  onOpenEnd: null,
-                  onOpenStart: null,
-                  outDuration: 250
-                }
-              }}
-              value=""
-            >
-              <option disabled value="">
-                Choose your Evasion
-              </option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-              <option value="9">9</option>
-              <option value="10">10</option>
-              <option value="11">11</option>
-              <option value="12">12</option>
-              <option value="13">13</option>
-              <option value="14">14</option>
-              <option value="15">15</option>
-              <option value="16">16</option>
-              <option value="17">17</option>
-              <option value="18">18</option>
-              <option value="19">19</option>
-              <option value="20">20</option>
-              <option value="21">21</option>
-              <option value="22">22</option>
-              <option value="23">23</option>
-              <option value="24">24</option>
-              <option value="25">25</option>
-            </Select>
-          </Col>
-        </Row>
-        <Row>
-          <Button
-            node="button"
-            type="submit"
-            waves="light"
-            center={true}
-            className="blue submit"
-          >
-            Submit
-            <Icon right>send</Icon>
-          </Button>
-        </Row>
+              Submit
+              <Icon right>send</Icon>
+            </Button>
+          </Row>
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
 
 export default Create;
