@@ -1,0 +1,33 @@
+#lightningLeft {
+  width: 40%;
+  height: 48%;
+  position: absolute;
+  margin-left: 8%;
+
+  z-index: 3;
+}
+#lightningRight {
+  width: 40%;
+  height: 48%;
+  margin-left: -17%;
+  position: absolute;
+
+  z-index: 2;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+#logo {
+  z-index: -1;
+  margin-top: 24.5%;
+  width: 45%;
+  height: 35%;
+  margin-left: 26%;
+}
+#pulse {
+  z-index: 4;
+  width: 50%;
+  position: absolute;
+  margin-top: 14%;
+  margin-left: -46%;
+}

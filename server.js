@@ -1,10 +1,8 @@
 const express = require("express");
-const mongoose = require("mongoose")
 const path = require("path");
 const PORT = process.env.PORT || 3001;
 const app = express();
-
-
+const mongoose = require("mongoose");
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
@@ -16,8 +14,14 @@ app.get("*", function(req, res) {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
 
-mongoose.connect('mongodb://localhost:27017/test', {useNewUrlParser: true, useUnifiedTopology: true});
-
 app.listen(PORT, function() {
   console.log(`🌎 ==> API server now on port ${PORT}!`);
+});
+
+mongoose.connect("mongodb://localhost/Fighters", { useNewUrlParser: true });
+
+var db = mongoose.connection;
+db.on("error", console.error.bind(console, "connection error:"));
+db.once("open", function() {
+  // we're connected!
 });

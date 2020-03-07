@@ -1,7 +1,12 @@
 body {
-  background-color: #004e95;
+  background-color: #000000;
 }
 
 .back-button {
   margin-right: 95.5%;
+}
+
+#characterSelectScreen {
+  margin-top: 8%;
+  z-index: -1;
 }
