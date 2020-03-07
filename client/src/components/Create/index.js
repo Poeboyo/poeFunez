@@ -16,6 +16,10 @@ function Create() {
           <TextInput placeholder="Character Name" s={8} />
         </Row>
 
+        <Row className="center-align" id="characterImage">
+          <TextInput placeholder="Character Image URL" s={8} />
+        </Row>
+
         <Row className="center-align selections">
           <Col className=" white-text white" s={4.5}>
             <Select
