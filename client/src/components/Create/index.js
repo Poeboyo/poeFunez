@@ -97,7 +97,7 @@ class Create extends React.Component {
                 placeholder="Attack"
                 onChange={this.handleChange}
                 options={options}
-                value={this.state.selectedOption.stats.attack}
+                value={this.selectedOption}
               />
             </Col>{" "}
             <Col className=" black-text white" s={2} id="defense">
@@ -105,7 +105,7 @@ class Create extends React.Component {
                 options={options}
                 placeholder="Defense"
                 onChange={this.handleChange}
-                value={this.state.selectedOption.stats.defense}
+                value={this.selectedOption}
               />
             </Col>{" "}
             <Col className=" black-text white" s={2} id="speed">
@@ -113,7 +113,7 @@ class Create extends React.Component {
                 options={options}
                 placeholder="Speed"
                 onChange={this.handleChange}
-                value={this.state.selectedOption.stats.speed}
+                value={this.selectedOption}
               />
             </Col>{" "}
             <Col className=" black-text white" s={2} id="evasion">
@@ -121,7 +121,7 @@ class Create extends React.Component {
                 options={options}
                 placeholder="Evasion"
                 onChange={this.handleChange}
-                value={this.state.selectedOption.stats.evasion}
+                value={this.selectedOption}
               />
             </Col>
           </Row>
