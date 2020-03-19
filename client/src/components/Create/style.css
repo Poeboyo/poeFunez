@@ -49,3 +49,10 @@
   margin-top: -10%;
   width: 27%;
 }
+#selections {
+  margin-left: 26.5%;
+  margin-top: 22%;
+  z-index: -14;
+  position: absolute;
+  width: 70%;
+}

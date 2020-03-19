@@ -91,7 +91,7 @@ class Create extends React.Component {
             />
           </Row>
 
-          <Row className=" selections">
+          <Row id="selections">
             <Col className=" black-text white" s={2} id="attack">
               <Select
                 placeholder="Attack"
